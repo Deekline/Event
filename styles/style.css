@@ -1,102 +1,309 @@
-body{
-    font-family: 'Poppins', sans-serif;
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+h2 {
+    font-size: 2em;
+    
+}
+h3 {
+    font-size: 1em;
 }
 
-a{
-    text-decoration: none;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.container{
-    width: 100%;
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
+a {
+  text-decoration: none;
 }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* start header */
 .ba-section.ba-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.ba-header{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
+.ba-header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-.ba-header-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+.ba-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.ba-menu{
-    display: flex;
-    justify-content: space-between;
-    list-style:none;
+.ba-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
-.ba-menu__item + .ba-menu__item{
-    margin-left: 30px;
+.ba-menu__item + .ba-menu__item {
+  margin-left: 30px;
 }
 
-.ba-menu__link{
-    color: #fff;
-    transition: .2s;
+.ba-menu__link {
+  color: #fff;
+  transition: 0.2s;
 }
 
 .ba-menu__link:hover,
-.ba-menu__link:focus{
-    color: #e71cb4;
+.ba-menu__link:focus {
+  color: #e71cb4;
 }
-.ba-menu__link:active{
-    color: pink;
-}
-
-.ba-logo__link{
-    color: #fff;
+.ba-menu__link:active {
+  color: pink;
 }
 
-.ba-hero{
-    background-color: #000;
-    background-image: url(../images/hero.jpg);
-    background-size:cover;
-    background-position: center center;
-    min-height: 100vh;
-    text-align: center;
-    color: #fff;
+.ba-logo__link {
+  color: #fff;
 }
 
-.ba-hero__title{
-    font-size: 3.75rem;
-    letter-spacing: 0;
-    margin-bottom: 0;
+.ba-hero {
+  background-color: #000;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
 }
 
-.ba-hero__text{
-    font-size: 1.875rem;
-    margin-bottom: 2.333em;
+.ba-hero__title {
+  font-size: 3.75rem;
+  letter-spacing: 0;
+  margin-bottom: 0;
 }
 
-.ba-btn{
-    display: inline-block;
-    background-color: transparent;
-    border: 2px solid rgb(221, 221, 221);
-    border-radius: 10px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 21px;
-    color: #fff;
-    text-decoration: none;
-    transition: .4s;
+.ba-hero__text {
+  font-size: 1.875rem;
+  margin-bottom: 2.333em;
+}
+
+.ba-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 21px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
 }
 
 .ba-btn:hover,
-.ba-btn:focus{
-    background-color: #fff;
-    color: #000;
+.ba-btn:focus {
+  background-color: #fff;
+  color: #000;
 }
-.ba-btn:active{
-    opacity: .8;
+.ba-btn:active {
+  opacity: 0.8;
 }
+
+
+/* end header */
+
+
+/* start design */
+.ba-section-design {
+  height:  150vh;
+}
+.wrapper-design {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ba-design__title {
+  color: #e71cb4;
+  margin: 0;
+}
+.ba-design__text {
+  font-size: 1.5rem;
+}
+.ba-col-6 {
+  display: flex;
+  align-items: center;
+}
+.ba-col-6 img {
+  padding-right: 1rem;
+}
+.ba-submission__desctipt{
+  font-size: 12px;
+}
+.ba-submission__button {
+  background-color: #e71cb4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  margin:0 0 5rem 15px;
+}
+
+
+
+/* end design */
+
+/* start partisipans */
+
+
+.ba-partisipans {
+    background:linear-gradient(#333399, #f902ca);
+    display: flex;
+    color:#fff;
+    text-align: center;
+}
+.ba-partisipans__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.5;
+}
+.ba-partisipans__countdown {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* end partisipans */
+
+
+/* start sponsorship */
+
+.ba-sponsorship {
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+.ba-sponsorship__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* end sponsorship */
+
+/* start jury */
+
+.ba-jury{
+    padding: 3rem 0;
+    background-color: #ffe9eb;
+    text-align: center;
+}
+.ba-jury__photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 0.5;
+}
+
+
+/* end jury */
+
+
+/* start contacts */
+
+
+.ba-contacts   {
+    width: 720px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+input,textarea {
+    border: none;
+}
+.ba-contact__form input,
+textarea {
+    border-bottom: 3px #555555 solid;
+}
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.ba-contact__form {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-bottom: 1px solid #555555;
+}
+.ba-contact__button {
+  width: 70%;
+  margin: 2rem auto;
+  
+  display: flex;
+  justify-content: flex-end;
+}
+.ba-contact__btn {
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #555555;
+  color: #fff;
+  border: none;
+}
+/* end contacts */
+
+/* start footer */
+.ba-footer__wrapper {
+  background-color: #eeeeee;
+  width: 100%;
+}
+.ba-footer {
+  width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555555;
+}
+.ba-footer__form {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.ba-footer__email {
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+}
+.ba-footer__button {
+  width: 7rem;
+  background-color: #c60ebe;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+.ba-footer__socials{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* end footer */
