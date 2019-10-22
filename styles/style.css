@@ -31,13 +31,6 @@ a {
   align-items: center;
 }
 
-.ba-header {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
 .ba-header-wrapper {
   display: flex;
   justify-content: space-between;
